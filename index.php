@@ -129,6 +129,7 @@
   <div class="container">
     <div class="section-title">
       <h2>Capture Beautiful Memories</h2>
+      <p class="section-description">Cherish every moment with our curated gallery—sunsets, stays, and smiles.</p>
     </div>
 
 
