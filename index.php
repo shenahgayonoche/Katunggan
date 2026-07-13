@@ -18,7 +18,8 @@
 <?php include 'includes/header.php'; ?>
 
 <!-- ================= HERO ================= -->
-<section class="hero">
+<section class="hero" data-reveal>
+
 
   <div class="slides">
     <img src="assets/images/hero/image1.webp" class="slide active" alt="">
@@ -54,7 +55,7 @@
 </section>
 
 <!-- ================= ABOUT ================= -->
-<section class="section">
+<section class="section" data-reveal>
   <div class="container about-grid" data-animate-about>
     
     <div class="about-image round-image">
@@ -77,7 +78,7 @@
 </section>
 
 <!-- ================= ACCOMMODATION ================= -->
-<section class="section bg-light">
+<section class="section bg-light" data-reveal>
 
   <div class="container">
 
@@ -124,7 +125,7 @@
 
 
 <!-- ================= GALLERY (CAROUSEL) ================= -->
-<section class="section bg-light">
+<section class="section bg-light" data-reveal>
   <div class="container">
     <div class="section-title">
       <h2>Capture Beautiful Memories</h2>
@@ -172,7 +173,7 @@
 
 
 <!-- ================= CAFE ================= -->
-<section class="section">
+<section class="section" data-reveal>
 
   <div class="container about-grid">
 
@@ -201,7 +202,7 @@
 </section>
 
 <!-- ================= CTA ================= -->
-<section class="cta">
+<section class="cta" data-reveal>
 
   <div class="container">
 
@@ -224,6 +225,7 @@
 
 <?php include 'includes/footer.php'; ?>
 
+<script src="assets/js/section-reveal.js"></script>
 <script src="assets/js/about-reveal.js"></script>
 
 </body>

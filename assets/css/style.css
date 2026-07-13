@@ -242,18 +242,18 @@ background: linear-gradient(
   align-items: center; /* Center them vertically */
 }
 
-/* (disabled global reveal) */
-.about-image,
-.about-content {
+/* Section reveal used by assets/js/section-reveal.js */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(14px);
   transition: opacity 700ms ease, transform 700ms ease;
   will-change: opacity, transform;
 }
 
-.about-grid.is-visible .about-image,
-.about-grid.is-visible .about-content {
-  /* no-op; actual reveal controlled by data-animate-about attribute */
+[data-reveal].is-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
-
 
 .round-image {
   box-shadow: 0 15px 40px rgba(0,0,0,0.08);
