@@ -17,8 +17,8 @@
         for (const entry of entries) {
           if (entry.isIntersecting) {
             root.classList.add('is-visible');
-            io.disconnect();
-            break;
+          } else {
+            root.classList.remove('is-visible');
           }
         }
       },
