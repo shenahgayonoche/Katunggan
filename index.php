@@ -55,7 +55,7 @@
 
 <!-- ================= ABOUT ================= -->
 <section class="section">
-  <div class="container about-grid">
+  <div class="container about-grid" data-animate-about>
     
     <div class="about-image round-image">
       <img src="assets/images/hero/image1.webp" alt="Katunggan Cove Resort" loading="lazy" width="600" height="450">
@@ -223,6 +223,8 @@
 </section>
 
 <?php include 'includes/footer.php'; ?>
+
+<script src="assets/js/about-reveal.js"></script>
 
 </body>
 </html>
