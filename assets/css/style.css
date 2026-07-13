@@ -181,6 +181,7 @@ background: linear-gradient(
 
 .section{
   padding:110px 0;
+  
 }
 
 
@@ -188,7 +189,7 @@ background: linear-gradient(
   height:auto;
 }
 .about-section {
-    min-height: 700px;
+    min-height: 300px;
     display: flex;
     align-items: center;
     font-size: 1.2rem;
@@ -241,20 +242,18 @@ background: linear-gradient(
   align-items: center; /* Center them vertically */
 }
 
-/* Subtle “not too simple” transition for About block */
+/* (disabled global reveal) */
 .about-image,
 .about-content {
-  opacity: 0;
-  transform: translateY(14px);
   transition: opacity 700ms ease, transform 700ms ease;
   will-change: opacity, transform;
 }
 
 .about-grid.is-visible .about-image,
 .about-grid.is-visible .about-content {
-  opacity: 1;
-  transform: translateY(0);
+  /* no-op; actual reveal controlled by data-animate-about attribute */
 }
+
 
 .round-image {
   box-shadow: 0 15px 40px rgba(0,0,0,0.08);
@@ -284,7 +283,7 @@ background: linear-gradient(
   margin:0;
   height:100%;
   overflow:hidden;
-  border-radius:0;
+  border-radius:10px;
   background:rgba(255,255,255,0.12);
   backdrop-filter:blur(6px);
 }
@@ -300,6 +299,19 @@ background: linear-gradient(
   height:100%;
   object-fit:cover;
   opacity:.95;
+}
+
+/* Prevent About scroll-reveal styles from hiding the Cafe preview */
+.about-grid[data-animate-about]:not(.is-visible) .about-content,
+.about-grid[data-animate-about]:not(.is-visible) .about-image{
+  opacity:0;
+  transform: translateY(14px);
+}
+
+.about-grid[data-animate-about].is-visible .about-content,
+.about-grid[data-animate-about].is-visible .about-image{
+  opacity:1;
+  transform: translateY(0);
 }
 
 
