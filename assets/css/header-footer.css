@@ -268,7 +268,7 @@ body.nav-transition{
       rgba(58, 88, 54, 0.82),
       rgba(58, 88, 54, 0.82)
     ),
-    url("../images/image3.webp");
+    url("../images/hero/image3.webp");
   background-size: cover;
   background-position: center;
 }
@@ -281,8 +281,9 @@ body.nav-transition{
 footer{
   background: #3a5836;
   color: #fff;
-  padding: 56px 0 24px;
+  padding: 34px 0 14px;
 }
+
 
 footer p{
   opacity: 0.85;

@@ -114,26 +114,31 @@ window.addEventListener('popstate', updateActiveNavLinks);
 window.addEventListener('hashchange', updateActiveNavLinks);
 
 // Automatic slider
-const slides = document.querySelectorAll(".slide");
-const dots = document.querySelectorAll(".dot");
+const slides = Array.from(document.querySelectorAll(".slide"));
+const dots = Array.from(document.querySelectorAll(".dot"));
 
-let current = 0;
+if (slides.length > 0) {
+  let current = 0;
 
-function showSlide(index) {
-  slides.forEach(slide => slide.classList.remove("active"));
-  dots.forEach(dot => dot.classList.remove("active-dot"));
+  function showSlide(index) {
+    const safeIndex = (index + slides.length) % slides.length;
 
-  slides[index].classList.add("active");
-  dots[index].classList.add("active-dot");
-}
+    slides.forEach((slide, slideIndex) => {
+      slide.classList.toggle("active", slideIndex === safeIndex);
+    });
 
-setInterval(() => {
-  current++;
-  if (current >= slides.length) {
-    current = 0;
+    if (dots.length === slides.length) {
+      dots.forEach((dot, dotIndex) => {
+        dot.classList.toggle("active-dot", dotIndex === safeIndex);
+      });
+    }
   }
-  showSlide(current);
-}, 5000);
+
+  setInterval(() => {
+    current++;
+    showSlide(current);
+  }, 5000);
+}
 
 const gallery = document.querySelector(".gallery-carousel");
 const galleryTrack = document.querySelector(".gallery-track");

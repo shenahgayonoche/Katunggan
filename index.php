@@ -4,27 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Katunggan Cove Resort</title>
-  <link rel="icon" href="../images/logo.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/images/logo/logo.svg" type="image/svg+xml">
 
-  <link rel="stylesheet" href="../css/header-footer.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/accommodation.css">
+  <link rel="stylesheet" href="assets/css/header-footer.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/accommodation.css">
 
-  <?php include '../includes/fonts.php'; ?>
+
+<?php include 'includes/fonts.php'; ?>
 </head>
 <body>
 
-<?php include '../includes/header.php'; ?>
+<?php include 'includes/header.php'; ?>
 
 <!-- ================= HERO ================= -->
 <section class="hero">
 
   <div class="slides">
-    <img src="../images/image1.webp" class="slide active" alt="">
-    <img src="../images/image2.webp" class="slide" alt="">
-    <img src="../images/image3.webp" class="slide" alt="">
-    <img src="../images/image4.webp" class="slide" alt="">
-    <img src="../images/image5.webp" class="slide" alt="">
+    <img src="assets/images/hero/image1.webp" class="slide active" alt="">
+    <img src="assets/images/hero/image2.webp" class="slide" alt="">
+    <img src="assets/images/hero/image3.webp" class="slide" alt="">
+    <img src="assets/images/hero/image1.webp" class="slide" alt="">
+    <img src="assets/images/hero/image2.webp" class="slide" alt="">
+
   </div>
 
   <div class="overlay"></div>
@@ -56,7 +58,8 @@
   <div class="container about-grid">
     
     <div class="about-image round-image">
-      <img src="../images/image1.webp" alt="Katunggan Cove Resort" loading="lazy" width="600" height="450">
+      <img src="assets/images/hero/image1.webp" alt="Katunggan Cove Resort" loading="lazy" width="600" height="450">
+
     </div>
 
     <div class="about-content">
@@ -86,7 +89,8 @@
     <div class="cards">
 
       <div class="card">
-        <img src="../images/image1.webp" alt="Villa" loading="lazy">
+        <img src="assets/images/hero/image1.webp" alt="Villa" loading="lazy">
+
         <div class="card-content">
           <h3>Villa</h3>
           <p>A spacious getaway designed for families and groups seeking comfort, privacy, and a relaxing resort experience.</p>
@@ -94,7 +98,8 @@
       </div>
 
       <div class="card">
-        <img src="../images/image2.webp" alt="Premium Queen" loading="lazy">
+        <img src="assets/images/hero/image2.webp" alt="Premium Queen" loading="lazy">
+
         <div class="card-content">
           <h3>Premium Queen</h3>
           <p>A cozy retreat featuring a private terrace, perfect for couples or guests looking for a peaceful and refreshing stay.</p>
@@ -102,7 +107,8 @@
       </div>
 
       <div class="card">
-        <img src="../images/image3.webp" alt="Quad Room" loading="lazy">
+        <img src="assets/images/hero/image3.webp" alt="Quad Room" loading="lazy">
+
         <div class="card-content">
           <h3>Quad Room</h3>
           <p>Ideal for families and friends, offering generous space and comfortable accommodations for memorable vacations together.</p>
@@ -126,28 +132,36 @@
 
 
     <div class="gallery-carousel" aria-label="Gallery carousel">
+
+
       <button class="gallery-nav gallery-prev" type="button" aria-label="Previous image">&#10094;</button>
 
       <div class="gallery-viewport">
         <div class="gallery-track">
           <div class="gallery-card">
-            <img src="../images/image1.webp" alt="Gallery image 1" loading="lazy">
+            <img src="assets/images/gallery/image1.webp" alt="Gallery image 1" loading="lazy">
           </div>
+
           <div class="gallery-card">
-            <img src="../images/image2.webp" alt="Gallery image 2" loading="lazy">
+            <img src="assets/images/gallery/image2.webp" alt="Gallery image 2" loading="lazy">
           </div>
+
           <div class="gallery-card">
-            <img src="../images/image3.webp" alt="Gallery image 3" loading="lazy">
+            <img src="assets/images/gallery/image3.webp" alt="Gallery image 3" loading="lazy">
           </div>
+
           <div class="gallery-card">
-            <img src="../images/image4.webp" alt="Gallery image 4" loading="lazy">
+            <img src="assets/images/gallery/image4.webp" alt="Gallery image 4" loading="lazy">
           </div>
+
           <div class="gallery-card">
-            <img src="../images/image5.webp" alt="Gallery image 5" loading="lazy">
+            <img src="assets/images/gallery/image5.webp" alt="Gallery image 5" loading="lazy">
           </div>
+
           <div class="gallery-card">
-            <img src="../images/image5.webp" alt="Gallery image 6" loading="lazy">
+            <img src="assets/images/gallery/image5.webp" alt="Gallery image 6" loading="lazy">
           </div>
+
         </div>
       </div>
 
@@ -178,8 +192,9 @@
     </div>
 
     <div class="about-image">
-      <img src="../images/image1.webp" alt="">
+      <img src="assets/images/hero/image1.webp" alt="">
     </div>
+
 
   </div>
 
@@ -207,7 +222,7 @@
 
 </section>
 
-<?php include '../includes/footer.php'; ?>
+<?php include 'includes/footer.php'; ?>
 
 </body>
 </html>

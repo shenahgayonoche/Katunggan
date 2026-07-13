@@ -4,20 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Facilities | Katunggan Cove Resort</title>
-  <link rel="icon" href="../images/logo.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="../css/header-footer.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/facilities.css">
+  <link rel="icon" href="assets/images/logo/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/header-footer.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/facilities.css">
 
-  <?php include '../includes/fonts.php'; ?>
+  <?php include 'includes/fonts.php'; ?>
 </head>
 <body>
 
-<?php include '../includes/header.php'; ?>
+<?php include 'includes/header.php'; ?>
 
 <section class="hero facilities-hero">
   <div class="slides">
-    <img src="../images/image3.webp" class="slide active" alt="Infinity pool at Katunggan Cove Resort">
+    <img src="assets/images/hero/image3.webp" class="slide active" alt="Infinity pool at Katunggan Cove Resort">
   </div>
 
   <div class="overlay"></div>
@@ -38,7 +38,7 @@
 
     <div class="facility-cards">
       <article class="facility-card">
-        <img src="../images/image1.webp" alt="Infinity Pool" loading="lazy">
+        <img src="assets/images/hero/image1.webp" alt="Infinity Pool" loading="lazy">
         <div class="facility-card-content">
           <h3>Infinity Pool</h3>
           <p>Fresh water, saltwater views, and open-air cabanas for sunrise swims and slow afternoons.</p>
@@ -46,7 +46,7 @@
       </article>
 
       <article class="facility-card">
-        <img src="../images/image2.webp" alt="Function Hall" loading="lazy">
+        <img src="assets/images/hero/image2.webp" alt="Function Hall" loading="lazy">
         <div class="facility-card-content">
           <h3>Function Hall</h3>
           <p>An open-sided garden pavilion suited for weddings, birthdays, and intimate corporate gatherings.</p>
@@ -54,7 +54,7 @@
       </article>
 
       <article class="facility-card">
-        <img src="../images/image4.webp" alt="Mangrove Gardens" loading="lazy">
+        <img src="assets/images/gallery/image4.webp" alt="Mangrove Gardens" loading="lazy">
         <div class="facility-card-content">
           <h3>Mangrove Gardens</h3>
           <p>Wooden boardwalks lead through peaceful mangrove paths where birds, fish, and stillness meet.</p>
@@ -62,7 +62,7 @@
       </article>
 
       <article class="facility-card">
-        <img src="../images/image5.webp" alt="Recreation and Water Activities" loading="lazy">
+        <img src="assets/images/gallery/image5.webp" alt="Recreation and Water Activities" loading="lazy">
         <div class="facility-card-content">
           <h3>Recreation &amp; Water</h3>
           <p>Kayaks, snorkel gear, paddleboards, and sunset boat tours make every day feel gently adventurous.</p>
@@ -131,7 +131,7 @@
   </div>
 </section>
 
-<?php include '../includes/footer.php'; ?>
+<?php include 'includes/footer.php'; ?>
 
 </body>
 </html>

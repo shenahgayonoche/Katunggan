@@ -5,20 +5,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact | Katunggan Cove Resort</title>
-  <link rel="icon" href="../images/logo.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="../css/header-footer.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/contact.css">
+  <link rel="icon" href="assets/images/logo/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/header-footer.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/contact.css">
 
-  <?php include '../includes/fonts.php'; ?>
+  <?php include 'includes/fonts.php'; ?>
 </head>
 <body>
 
-<?php include '../includes/header.php'; ?>
+<?php include 'includes/header.php'; ?>
 
 <section class="hero contact-hero">
   <div class="slides">
-    <img src="../images/image3.webp" class="slide active" alt="Resort garden path">
+    <img src="assets/images/hero/image3.webp" class="slide active" alt="Resort garden path">
   </div>
   <div class="overlay"></div>
 
@@ -34,15 +34,15 @@
     <div class="contact-sidebar">
       <div class="contact-card">
         <h3>Email</h3>
-        <p>stay@katunggancove.ph</p>
+        <p>katunggancoveresort@gmail.com</p>
       </div>
       <div class="contact-card">
         <h3>Phone</h3>
-        <p>+63 33 555 0199</p>
+        <p>0920 928 1766</p>
       </div>
       <div class="contact-card">
         <h3>Address</h3>
-        <p>Barangay La Paz, Nueva Valencia, Guimaras 5046</p>
+        <p>Brgy. Tando, Nueva Valencia, Guimaras, Philippines</p>
       </div>
     </div>
 
@@ -99,7 +99,7 @@
   </div>
 </section>
 
-<?php include '../includes/footer.php'; ?>
+<?php include 'includes/footer.php'; ?>
 
 </body>
 </html>

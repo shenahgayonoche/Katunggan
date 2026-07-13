@@ -15,6 +15,7 @@
             </svg>
           </span>
           <span class="footer-plain">0920 928 1766</span>
+
         </p>
 
         <p class="footer-text footer-contact">
@@ -44,6 +45,7 @@
           <div class="footer-location-details">
             <p class="footer-text">
               Brgy. Tando, Nueva Valencia, Guimaras, Philippines
+
             </p>
           </div>
           <div class="footer-map-wrapper">
@@ -64,7 +66,7 @@
     <div class="footer-bottom">
       <div class="footer-bottom-left">
         <div class="footer-bottom-brand">
-          <img src="../images/logo-converted-white.svg" alt="Katunggan logo" style="width:100px;height:100px;margin:0 auto 10px;display:block;object-fit:contain;" />
+          <img src="assets/images/logo/logo-converted-white.svg" alt="Katunggan logo" style="width:100px;height:100px;margin:0 auto 10px;display:block;object-fit:contain;" />
           <div style="margin-top:4px;">Katunggan Cove Resort</div>
         </div>
         <div class="footer-bottom-copy">&copy; 2026 Katunggan Cove Resort. All rights reserved.</div>
@@ -75,7 +77,7 @@
     </div>
   </div>
 </footer>
-<script src="../js/script.js"></script>
+<script src="assets/js/script.js?v=1.2"></script>
 
 
 
