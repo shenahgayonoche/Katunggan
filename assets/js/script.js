@@ -180,29 +180,7 @@ if (gallery && galleryTrack && galleryPrev && galleryNext) {
     update();
   });
 
-  // automatic slow carousel (right -> left)
-  let autoTimer = null;
-  const startAuto = () => {
-    stopAuto();
-    autoTimer = window.setInterval(() => {
-      // Move track left by incrementing index
-      index += 1;
-      update();
-    }, 2800); // slower than the hero slider
-  };
 
-  const stopAuto = () => {
-    if (autoTimer) {
-      window.clearInterval(autoTimer);
-      autoTimer = null;
-    }
-  };
-
-  // pause on hover
-  gallery.addEventListener('mouseenter', stopAuto);
-  gallery.addEventListener('mouseleave', startAuto);
-
-  startAuto();
 
   // swipe support
   let startX = null;
