@@ -170,8 +170,10 @@
     display:inline-flex;
     align-items:center;
     justify-content:center;
-    min-width:20px;
-    padding:8px 14px;
+    /* Let the button fit "Read More" without a long pill */
+    min-width: unset;
+    width: fit-content;
+    padding:6px 12px;
     font-family:'Cinzel', serif;
     color:#ffffff;
     background:#3a5836;
@@ -179,10 +181,11 @@
     border-radius:700px;
     text-decoration:none;
     font-size:0.8rem;
-    letter-spacing:0.5px;
+    letter-spacing:0.3px;
     line-height:1;
     white-space:nowrap;
 }
+
 
 .view-btn:hover,
 .view-btn:focus-visible{
