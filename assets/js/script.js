@@ -147,6 +147,7 @@ const galleryNext = document.querySelector(".gallery-next");
 
 if (gallery && galleryTrack && galleryPrev && galleryNext) {
   const cards = () => Array.from(galleryTrack.querySelectorAll(".gallery-card"));
+
   const getCardWidth = () => {
     const first = galleryTrack.querySelector(".gallery-card");
     if (!first) return 0;
@@ -156,49 +157,102 @@ if (gallery && galleryTrack && galleryPrev && galleryNext) {
   };
 
   let index = 0;
+  let autoTimer = null;
+  const AUTO_MS = 3500;
 
   function clamp(val, min, max) {
     return Math.max(min, Math.min(max, val));
   }
 
-  function update() {
+  function updateActiveCardStyles() {
     const list = cards();
     if (!list.length) return;
 
-    index = clamp(index, 0, list.length - 1);
+    list.forEach((card, i) => {
+      card.classList.toggle("is-current", i === index);
+      card.classList.toggle("is-neighbor", i === index - 1 || i === index + 1);
+    });
+  }
+
+  function update({ withBounds = true } = {}) {
+    const list = cards();
+    if (!list.length) return;
+
+    if (withBounds) {
+      index = clamp(index, 0, list.length - 1);
+    } else {
+      // wrap-around
+      const max = list.length - 1;
+      if (index < 0) index = max;
+      if (index > max) index = 0;
+    }
+
     const cardWidth = getCardWidth();
     galleryTrack.style.transform = `translateX(${-index * cardWidth}px)`;
+    updateActiveCardStyles();
+  }
+
+  function goNext() {
+    index += 1;
+    update({ withBounds: false });
+  }
+
+  function goPrev() {
+    index -= 1;
+    update({ withBounds: false });
+  }
+
+  function startAuto() {
+    stopAuto();
+    autoTimer = window.setInterval(goNext, AUTO_MS);
+  }
+
+  function stopAuto() {
+    if (autoTimer) window.clearInterval(autoTimer);
+    autoTimer = null;
   }
 
   galleryPrev.addEventListener("click", () => {
-    index -= 1;
-    update();
+    stopAuto();
+    goPrev();
+    startAuto();
   });
 
   galleryNext.addEventListener("click", () => {
-    index += 1;
-    update();
+    stopAuto();
+    goNext();
+    startAuto();
   });
-
-
 
   // swipe support
   let startX = null;
-  gallery.addEventListener("touchstart", (e) => {
-    startX = e.touches[0].clientX;
-  }, { passive: true });
+  gallery.addEventListener(
+    "touchstart",
+    (e) => {
+      startX = e.touches[0].clientX;
+      stopAuto();
+    },
+    { passive: true }
+  );
 
   gallery.addEventListener("touchend", (e) => {
     if (startX == null) return;
     const dx = e.changedTouches[0].clientX - startX;
     if (Math.abs(dx) > 40) {
       index += dx > 0 ? -1 : 1;
-      update();
+      update({ withBounds: false });
     }
     startX = null;
+    startAuto();
   });
 
   // keep in sync on resize
-  window.addEventListener("resize", update);
+  window.addEventListener("resize", () => update({ withBounds: true }));
+
+  // pause on hover
+  gallery.addEventListener("mouseenter", stopAuto);
+  gallery.addEventListener("mouseleave", startAuto);
+
   update();
+  startAuto();
 }

@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="assets/css/header-footer.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/gallery.css?v=1.1">
+  <link rel="stylesheet" href="assets/css/gallery-carousel-enhancements.css?v=1.0">
+
 
   <?php include 'includes/fonts.php'; ?>
 </head>

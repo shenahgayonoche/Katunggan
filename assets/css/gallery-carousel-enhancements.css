@@ -1,0 +1,69 @@
+:root {
+  --kat-green-1: #1f7a4a;
+  --kat-green-2: #2db36b;
+}
+
+/* Carousel visuals (works with .gallery-carousel markup from your page) */
+.gallery-carousel {
+  --carousel-accent: var(--kat-green-2);
+}
+
+.gallery-nav.gallery-prev,
+.gallery-nav.gallery-next {
+  background: rgba(45, 179, 107, 0.15);
+  border: 2px solid var(--carousel-accent);
+  color: var(--carousel-accent);
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 160ms ease, background-color 160ms ease;
+}
+
+.gallery-nav.gallery-prev:hover,
+.gallery-nav.gallery-next:hover {
+  background: rgba(45, 179, 107, 0.28);
+  transform: scale(1.04);
+}
+
+.gallery-nav.gallery-prev:active,
+.gallery-nav.gallery-next:active {
+  transform: scale(0.98);
+}
+
+/* Emphasis: current card slightly larger */
+.gallery-track {
+  transition: transform 520ms cubic-bezier(0.2, 0.8, 0.2, 1);
+  will-change: transform;
+}
+
+.gallery-card {
+  transition: transform 260ms ease, filter 260ms ease, opacity 260ms ease;
+  transform: scale(0.92);
+  filter: saturate(0.9);
+  opacity: 0.9;
+  will-change: transform;
+}
+
+.gallery-card.is-current {
+  transform: scale(1.08);
+  opacity: 1;
+  filter: saturate(1);
+  z-index: 2;
+}
+
+.gallery-card.is-neighbor {
+  transform: scale(0.98);
+  opacity: 0.98;
+  filter: saturate(0.96);
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .gallery-track { transition: none; }
+  .gallery-card { transition: none; }
+}
+
