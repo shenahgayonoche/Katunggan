@@ -228,6 +228,7 @@
 
 <script src="assets/js/section-reveal.js"></script>
 <script src="assets/js/about-reveal.js"></script>
+<script src="assets/js/gallery-carousel.js"></script>
 
 </body>
 </html>

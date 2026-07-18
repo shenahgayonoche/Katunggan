@@ -1,14 +1,11 @@
-# TODO - KatungganCove
+- [x] Review existing gallery carousel logic and enhancement CSS
+- [x] Implement circular smooth autoplay + one-by-one sliding
 
-## Planned changes
-- [x] Add per-room metadata with icons: beds, restroom, pax, and price.
-- [x] Style the new metadata section in `assets/css/accommodation.css`.
-- [x] Verify responsiveness on tablet/mobile.
+- [x] Apply rounded rectangle card design + subtle scale transitions
 
-## Gallery carousel enhancements (this task)
-- [x] Add auto-moving carousel every few seconds.
-- [x] Update carousel buttons to a green theme.
-- [x] Enlarge the centered/current image and slightly shrink neighbors.
-- [x] Pause auto-move on hover / swipe and on manual controls.
-- [ ] Push changes to GitHub repository `shenahgayonoche/Katunggan`.
+- [x] Update prev/next buttons to green theme with hover/click animations
+
+- [x] Add/adjust responsive rules for desktop/tablet/mobile
+
+- [x] Verify no skipping and no reset behavior on loop
 
