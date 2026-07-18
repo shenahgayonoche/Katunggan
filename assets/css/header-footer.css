@@ -395,6 +395,12 @@ footer a:hover{
   min-width: 0;
 }
 
+.footer-follow{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
 .footer-about{
   display: flex;
   flex-direction: column;

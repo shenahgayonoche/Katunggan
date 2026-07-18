@@ -40,7 +40,13 @@
             </p>
           </div>
 
-          <div class="footer-follow-block footer-follow-right">
+          <!-- Follow block moved to its own column for alignment -->
+
+        </div>
+      </div>
+
+        <div class="footer-col footer-follow">
+          <div class="footer-follow-block">
             <h3 class="footer-title">Follow Us</h3>
             <div class="social-links" aria-label="Social media links">
               <a class="social-icon" href="https://www.facebook.com/profile.php?id=61589372212595" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
@@ -50,9 +56,7 @@
               </a>
             </div>
           </div>
-
         </div>
-      </div>
 
 
     </div>
