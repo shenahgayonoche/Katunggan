@@ -65,6 +65,7 @@
     </div>
 
 
+
     <div class="about-image round-image">
 
       <img src="assets/images/hero/image1.webp" alt="Katunggan Cove Resort" loading="lazy" width="600" height="450">

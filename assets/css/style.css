@@ -181,10 +181,7 @@ background: linear-gradient(
 
 .section{
   padding:110px 0;
-  
 }
-
-
 .section .container{
   height:auto;
 }
@@ -272,12 +269,16 @@ background: linear-gradient(
 .round-image {
   box-shadow: 0 15px 40px rgba(0,0,0,0.08);
   height: auto;
+  border: 2px solid #c28c5a; /* brown outside frame */
+  padding: 8px; /* space between border and image */
+  background: transparent;
 }
 
 .round-image img {
   aspect-ratio: 4/3; /* Forces a perfect rectangle */
   object-fit: cover;
 }
+
 
 /* Ensure left image matches right column height */
 .about-grid > .about-image{
