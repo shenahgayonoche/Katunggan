@@ -1,11 +1,22 @@
-- [x] Review existing gallery carousel logic and enhancement CSS
-- [x] Implement circular smooth autoplay + one-by-one sliding
+# TODO - KatungganCove (Café Page Enhancements)
 
-- [x] Apply rounded rectangle card design + subtle scale transitions
+- [x] Inspect existing `cafe.php` and `assets/css/cafe.css` styling hooks.
+- [x] Replace `cafe.php` page markup with 7 requested sections (hero, about/story, features, signature dishes, gallery, full menu PDF, final CTA).
 
-- [x] Update prev/next buttons to green theme with hover/click animations
+- [x] Extend `assets/css/cafe.css` to match the site’s premium resort dining language and ensure responsiveness.
 
-- [x] Add/adjust responsive rules for desktop/tablet/mobile
+- [x] Add section ids for internal navigation: hero CTA → `#menu-pdf`.
 
-- [x] Verify no skipping and no reset behavior on loop
+- [x] Add responsive PDF preview container with rounded corners + iframe.
+
+- [x] Ensure smooth scrolling works with in-page anchor links.
+
+- [x] Verify PDF path `pdf/katunggan-cafe-menu.pdf` exists; if not, adjust iframe src gracefully.
+
+
+
+- [ ] Final manual check: render in browser at desktop + mobile widths.
+
+
+
 
