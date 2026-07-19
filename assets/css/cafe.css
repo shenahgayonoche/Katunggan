@@ -364,7 +364,9 @@
   display: block;
   border: 0;
   width: 100%;
+  height: 520px;
 }
+
 
 .pdf-note{
   margin-top: 14px;
@@ -423,12 +425,18 @@
   .hero.cafe-hero{ min-height: 60vh; }
 
   .feature-grid{
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  /* keep desktop/tablet PDF height; only tighten on small screens */
+  .pdf-frame iframe{
+    height: 460px;
   }
 
   .cafe-about{
     gap: 26px;
   }
+
 
   .cafe-about-content h2{
     font-size: 2.3rem;
