@@ -1,6 +1,6 @@
 <?php
 $activePage = 'cafe';
-$menuPdfPath = 'pdf/Katunggan Cafe Menu.pdf';
+$menuPdfPath = 'pdf/katunggan-cafe-menu.pdf';
 $menuPdfExists = file_exists($menuPdfPath);
 ?>
 <!DOCTYPE html>
