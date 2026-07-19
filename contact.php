@@ -15,18 +15,6 @@
 
 <?php include 'includes/header.php'; ?>
 
-<section class="hero contact-hero">
-  <div class="slides">
-    <img src="assets/images/hero/image3.webp" class="slide active" alt="Resort garden path">
-  </div>
-  <div class="overlay"></div>
-
-  <div class="hero-content">
-    <p>Contact</p>
-    <h1>Say hello. We reply slowly, but warmly.</h1>
-    <span>For reservations, events, or a simple question about the tide.</span>
-  </div>
-</section>
 
 <section class="section">
   <div class="container contact-grid">
