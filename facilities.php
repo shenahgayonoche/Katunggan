@@ -23,8 +23,7 @@
   <div class="overlay"></div>
 
   <div class="hero-content">
-    <p>Facilities</p>
-    <h1>Small resort. Full life.</h1>
+    <h1>Facilities</h1>
     <span>Everything you need to slow down, gathered in one quiet cove.</span>
   </div>
 </section>

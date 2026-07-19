@@ -24,6 +24,7 @@
   gap: 10px !important;
   margin-top: 40px;
   width: 100%;
+  align-items: stretch;
 }
 
 .gallery-card {
@@ -34,15 +35,47 @@
   background: #f1f3f0;
   margin: 0 !important;
   padding: 0 !important;
+  transform: translateZ(0);
 }
 
-gallery-card img {
+/* Prevent overlap caused by stray transforms/animations from other styles */
+.gallery-card.wide,
+.gallery-card.tall {
+  grid-column: auto;
+  grid-row: auto;
+}
+
+.gallery-card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
   will-change: transform;
+  transform: scale(1.02);
+  transition: transform 700ms ease, filter 400ms ease;
 }
+
+.gallery-card:hover img {
+  transform: scale(1.08);
+  filter: saturate(1.04) contrast(1.03);
+}
+
+/* Professional photo polish */
+.gallery-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(0,0,0,0.0) 45%, rgba(0,0,0,0.42) 100%);
+  opacity: 0.95;
+  pointer-events: none;
+}
+
+.gallery-caption {
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
 
 /* Only animate images inside the homepage carousel */
 .gallery-carousel .gallery-card img{

@@ -1,0 +1,64 @@
+:root{
+  --kc-leaf-green: rgba(58,88,54,0.18);
+}
+
+/* About-section leaf design */
+.about-leaves{
+  position:absolute;
+  top:0;
+  right:0;
+  bottom:auto;
+  left:auto;
+  pointer-events:none;
+  z-index:0;
+  width:520px;
+  max-width:55%;
+  display:flex;
+  justify-content:flex-end;
+}
+
+
+/* the about section container is .section; keep leaf behind content */
+.section[data-reveal]{
+  position:relative;
+}
+
+.about-leaves img{
+  width:500px;
+  max-width:60vw;
+  opacity:0.75;
+  filter: saturate(1.05) contrast(1.05);
+  margin-right:-15px;
+  transform-origin: 70% 50%;
+  animation: kcLeafWind 8s ease-in-out infinite;
+
+}
+
+@keyframes kcLeafWind{
+  0%{
+    transform: translateX(0) rotate(0deg) scale(1);
+  }
+  30%{
+    transform: translateX(-8px) rotate(-2.5deg) scale(1.01);
+  }
+  60%{
+    transform: translateX(6px) rotate(2deg) scale(1.01);
+  }
+  100%{
+    transform: translateX(0) rotate(0deg) scale(1);
+  }
+}
+
+
+@media (max-width:900px){
+  .about-leaves{
+    justify-content:center;
+  }
+  .about-leaves img{
+    width:320px;
+    max-width:80vw;
+    opacity:0.35; /* make sure it doesn't hide About text on smaller screens */
+  }
+}
+
+

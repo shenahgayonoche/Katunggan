@@ -15,69 +15,116 @@
 
 <?php include 'includes/header.php'; ?>
 
-
-<section class="section">
+<section class="section contact-hero-bg">
   <div class="container contact-grid">
-    <div class="contact-sidebar">
-      <div class="contact-card">
-        <h3>Email</h3>
-        <p>katunggancoveresort@gmail.com</p>
-      </div>
-      <div class="contact-card">
-        <h3>Phone</h3>
-        <p>0920 928 1766</p>
-      </div>
-      <div class="contact-card">
-        <h3>Address</h3>
-        <p>Brgy. Tando, Nueva Valencia, Guimaras, Philippines</p>
+
+    <!-- Left Column: Form -->
+    <div class="contact-left">
+      <div class="contact-form-card">
+        <h2>Contact Us</h2>
+        <p class="contact-intro">We'd love to hear from you. Whether you have questions about bookings, accommodations, dining, or special events, our team is here to help. Fill out the form below and we'll get back to you as soon as possible.</p>
+
+        <form class="contact-form" action="contact-handler.php" method="POST">
+          <div class="form-row">
+            <label>Name
+              <input type="text" name="name" required>
+            </label>
+            <label>Email
+              <input type="email" name="email" required>
+            </label>
+          </div>
+
+          <div class="form-row">
+            <label>Phone
+              <input type="tel" name="phone">
+            </label>
+            <label>Inquiry
+              <select name="inquiry" required>
+                <option value="" disabled selected>Select an option</option>
+                <option value="Booking Inquiry">Booking Inquiry</option>
+                <option value="Restaurant Reservation">Restaurant Reservation</option>
+                <option value="General Question">General Question</option>
+                <option value="Feedback/Other">Feedback/Other</option>
+                <option value="Other">Other</option>
+              </select>
+            </label>
+          </div>
+
+          <!-- Shown only when inquiry is Other -->
+          <div class="inquiry-other-row" style="display:none;">
+            <label>Other (type here)
+              <input type="text" name="inquiry_other" placeholder="e.g., wedding, transfer, special request">
+            </label>
+          </div>
+
+          <label>Message
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+
+          <button type="submit" class="btn">Send Message</button>
+        </form>
       </div>
     </div>
 
-    <div class="contact-form-card">
-      <h2>Get in touch</h2>
-      <p>Please use this form to get in touch with us. We'll be happy to assist you with any inquiries or requests.</p>
-
-      <p class="contact-like"> <a href="https://www.facebook.com/p/Katunggan-Cove-Resort-61589372212595/" target="_blank" rel="noopener noreferrer">Message us on Facebook</a>.</p>
-
-      <form class="contact-form" action="contact-handler.php" method="POST">
-        <div class="form-row">
-          <label>Name
-            <input type="text" name="name" required>
-          </label>
-          <label>Email
-            <input type="email" name="email" required>
-          </label>
+    <!-- Right Column: Contact Information -->
+    <div class="contact-right">
+      <div class="contact-card">
+        <div class="contact-card-header">
+          <span class="contact-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 6h16v12H4V6Z" stroke="currentColor" stroke-width="1.8"/>
+              <path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="1.8"/>
+            </svg>
+          </span>
+          <h3>Email</h3>
         </div>
+        <p>katunggancoveresort@gmail.com</p>
+      </div>
 
-        <div class="form-row">
-          <label>Phone
-            <input type="tel" name="phone">
-          </label>
-          <label>Inquiry
-            <select name="inquiry" required>
-              <option value="" disabled selected>Select an option</option>
-              <option value="Booking Inquiry">Booking Inquiry</option>
-              <option value="Restaurant Reservation">Restaurant Reservation</option>
-              <option value="General Question">General Question</option>
-              <option value="Feedback/Other">Feedback/Other</option>
-              <option value="Other">Other</option>
-            </select>
-          </label>
+      <div class="contact-card">
+        <div class="contact-card-header">
+          <span class="contact-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.5 3.8h2.2l1.2 3.4-1.4 1.4c1.2 2.4 3.3 4.5 5.7 5.7l1.4-1.4 3.4 1.2v2.2c0 .9-.7 1.6-1.6 1.6C10.3 20 4 13.7 4 6.4c0-.9.7-1.6 1.6-1.6Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <h3>Phone</h3>
         </div>
+        <p>0920 928 1766</p>
+      </div>
 
-        <!-- Shown only when inquiry is Other -->
-        <div class="inquiry-other-row" style="display:none;">
-          <label>Other (type here)
-            <input type="text" name="inquiry_other" placeholder="e.g., wedding, transfer, special request">
-          </label>
+      <div class="contact-card">
+        <div class="contact-card-header">
+          <span class="contact-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 21s7-4.4 7-11a7 7 0 0 0-14 0c0 6.6 7 11 7 11Z" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M12 10.3a2.2 2.2 0 1 0 0-4.4 2.2 2.2 0 0 0 0 4.4Z" stroke="currentColor" stroke-width="1.8"/>
+            </svg>
+          </span>
+          <h3>Address</h3>
         </div>
+        <p>Brgy. Tando, Nueva Valencia, Guimaras, Philippines</p>
+      </div>
 
-        <label>Message
-          <textarea name="message" rows="5" required></textarea>
-        </label>
-
-        <button type="submit" class="btn">Send Message</button>
-      </form>
+      <div class="contact-card">
+        <div class="contact-card-header">
+          <span class="contact-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 7h10v14H7V7Z" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M5 3h14v4H5V3Z" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M9 11h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <h3>Booking</h3>
+        </div>
+        <a class="booking-btn" href="https://www.facebook.com/p/Katunggan-Cove-Resort-61589372212595/" target="_blank" rel="noopener noreferrer" aria-label="Book Now on Facebook">
+          <span>Book Now</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M5 12h12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            <path d="m13 6 6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
     </div>
   </div>
 </section>

@@ -296,24 +296,15 @@ background: linear-gradient(
   max-width:none;
   margin:0;
   height:100%;
-  overflow:hidden;
-  border-radius:10px;
-  background:rgba(255,255,255,0.12);
-  backdrop-filter:blur(6px);
 }
 
+  .about-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    opacity:.95;
+  }
 
-
-
-
-
-
-.about-image img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  opacity:.95;
-}
 
 /* Prevent About scroll-reveal styles from hiding the Cafe preview */
 .about-grid[data-animate-about]:not(.is-visible) .about-content,
@@ -329,28 +320,26 @@ background: linear-gradient(
 }
 
 
-.about-content{
+ .about-content{
   font-family:'Inter', sans-serif;
-  text-align:center;
-  margin:0;
   max-width:820px;
+  margin:0;
   padding-left:10px;
+  text-align:left;
+  align-items:left;
 }
 
 
+  .about-content p{
 
-
-.about-content p{
   color:#4e5a63;
   line-height:1.95;
   font-size:1.05rem;
-  margin:0 0 35px 0;
+  margin:0 0 35px;
+  text-align:left;
+  align-items:left;
 }
 
-
-.about-content .btn{
-  margin:0 auto;
-}
 
 .cards {
   display: grid;
