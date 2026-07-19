@@ -8,12 +8,20 @@
 
   <link rel="stylesheet" href="assets/css/header-footer.css">
   <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/about-leaves.css">
+
   <link rel="stylesheet" href="assets/css/accommodation.css">
 
 
 
+
+
+
+
+
+
 <?php include 'includes/fonts.php'; ?>
+
+
 </head>
 <body>
 
@@ -61,7 +69,8 @@
   <div class="container about-grid" data-animate-about>
 
     <div class="about-leaves" aria-hidden="true">
-      <img src="assets\images\hero\leaf.webp" alt="" loading="lazy" />
+      <img src="assets/images/hero/leaf.webp" alt="" loading="lazy" />
+      <img src="assets/images/hero/leaf2.webp" alt="" loading="lazy" class="kc-leaf-left" />
     </div>
 
 
@@ -69,6 +78,7 @@
     <div class="about-image round-image">
 
       <img src="assets/images/hero/image1.webp" alt="Katunggan Cove Resort" loading="lazy" width="600" height="450">
+      
 
     </div>
 
@@ -203,7 +213,7 @@
     </div>
 
     <div class="about-image">
-      <img src="assets/images/hero/image1.webp" alt="">
+      <img src="assets/images/cafe/breakfastmeals.webp" alt="">
     </div>
 
 

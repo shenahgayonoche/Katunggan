@@ -2,10 +2,14 @@
   --kc-leaf-green: rgba(58,88,54,0.18);
 }
 
+:root{
+  --kc-leaf-green: rgba(58,88,54,0.18);
+}
+
 /* About-section leaf design */
 .about-leaves{
   position:absolute;
-  top:0;
+  top:10px;
   right:0;
   bottom:auto;
   left:auto;
@@ -50,16 +54,15 @@
 /* Second leaf (lower-left) */
 .about-leaves img.kc-leaf-left{
   position:absolute;
-  top:auto;
-  bottom: -40px;
-  left: -10px;
-  width:420px;
+  left:190px;
+  width:500px;
   max-width:70vw;
-  opacity:0.45;
+  opacity:0.75;
+  bottom:-400px;
   transform-origin: 30% 60%;
   filter: saturate(1.05) contrast(1.05);
   animation: kcLeafWindLeft 10s ease-in-out infinite;
-  margin-right:0; /* override base margin-right */
+  margin-left:-1700px; /* override base margin-right */
 }
 
 @keyframes kcLeafWindLeft{
@@ -96,4 +99,8 @@
     transform-origin: 30% 60%;
   }
 }
+
+
+
+
 

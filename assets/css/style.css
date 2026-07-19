@@ -246,6 +246,204 @@ background: linear-gradient(
    ABOUT SECTION
 ========================= */
 
+/* About leaves styles (moved from assets/css/about-leaves.css) */
+:root{
+  --kc-leaf-green: rgba(58,88,54,0.18);
+}
+
+.about-leaves{
+  position:absolute;
+  top:0;
+  right:0;
+  bottom:auto;
+  left:auto;
+  pointer-events:none;
+  z-index:0;
+  width:520px;
+  max-width:55%;
+  display:flex;
+  justify-content:flex-end;
+}
+
+.section[data-reveal]{
+  position:relative;
+}
+
+.about-leaves img{
+  width:500px;
+  max-width:60vw;
+  opacity:0.75;
+  filter: saturate(1.05) contrast(1.05);
+  margin-right:-15px;
+  transform-origin: 70% 50%;
+  animation: kcLeafWind 8s ease-in-out infinite;
+}
+
+@keyframes kcLeafWind{
+  0%{
+    transform: translateX(0) rotate(0deg) scale(1);
+  }
+  30%{
+    transform: translateX(-8px) rotate(-2.5deg) scale(1.01);
+  }
+  60%{
+    transform: translateX(6px) rotate(2deg) scale(1.01);
+  }
+  100%{
+    transform: translateX(0) rotate(0deg) scale(1);
+  }
+}
+
+.about-leaves img.kc-leaf-left{
+  position:absolute;
+  left:190px;
+  width:500px;
+  max-width:70vw;
+  opacity:0.75;
+  bottom:-400px;
+  transform-origin: 30% 60%;
+  filter: saturate(1.05) contrast(1.05);
+  animation: kcLeafWindLeft 10s ease-in-out infinite;
+  margin-left:-1700px;
+}
+
+@keyframes kcLeafWindLeft{
+  0%{
+    transform: rotate(-6deg) translateX(0) scale(1);
+  }
+  30%{
+    transform: rotate(-8deg) translateX(10px) scale(1.01);
+  }
+  60%{
+    transform: rotate(-4deg) translateX(-8px) scale(1.01);
+  }
+  100%{
+    transform: rotate(-6deg) translateX(0) scale(1);
+  }
+}
+
+@media (max-width:900px){
+  .about-leaves{
+    justify-content:center;
+  }
+  .about-leaves img{
+    width:320px;
+    max-width:80vw;
+    opacity:0.35;
+  }
+
+  .about-leaves img.kc-leaf-left{
+    left: -20px;
+    bottom: -40px;
+    width:260px;
+    max-width:70vw;
+    opacity:0.22;
+    transform-origin: 30% 60%;
+  }
+}
+
+
+/* About leaves (extracted from about-leaves.css) */
+:root{
+  --kc-leaf-green: rgba(58,88,54,0.18);
+}
+
+/* About-section leaf design */
+.about-leaves{
+  position:absolute;
+  top:0;
+  right:0;
+  bottom:auto;
+  left:auto;
+  pointer-events:none;
+  z-index:0;
+  width:520px;
+  max-width:55%;
+  display:flex;
+  justify-content:flex-end;
+}
+
+/* the about section container is .section; keep leaf behind content */
+.section[data-reveal]{
+  position:relative;
+}
+
+.about-leaves img{
+  width:500px;
+  max-width:60vw;
+  opacity:0.75;
+  filter: saturate(1.05) contrast(1.05);
+  margin-right:-15px;
+  transform-origin: 70% 50%;
+  animation: kcLeafWind 8s ease-in-out infinite;
+}
+
+@keyframes kcLeafWind{
+  0%{
+    transform: translateX(0) rotate(0deg) scale(1);
+  }
+  30%{
+    transform: translateX(-8px) rotate(-2.5deg) scale(1.01);
+  }
+  60%{
+    transform: translateX(6px) rotate(2deg) scale(1.01);
+  }
+  100%{
+    transform: translateX(0) rotate(0deg) scale(1);
+  }
+}
+
+/* Second leaf (lower-left) */
+.about-leaves img.kc-leaf-left{
+  position:absolute;
+  left:190px;
+  width:500px;
+  max-width:70vw;
+  opacity:0.75;
+  bottom:-400px;
+  transform-origin: 30% 60%;
+  filter: saturate(1.05) contrast(1.05);
+  animation: kcLeafWindLeft 10s ease-in-out infinite;
+  margin-left:-1700px; /* override base margin-right */
+}
+
+@keyframes kcLeafWindLeft{
+  0%{
+    transform: rotate(-6deg) translateX(0) scale(1);
+  }
+  30%{
+    transform: rotate(-8deg) translateX(10px) scale(1.01);
+  }
+  60%{
+    transform: rotate(-4deg) translateX(-8px) scale(1.01);
+  }
+  100%{
+    transform: rotate(-6deg) translateX(0) scale(1);
+  }
+}
+
+@media (max-width:900px){
+  .about-leaves{
+    justify-content:center;
+  }
+  .about-leaves img{
+    width:320px;
+    max-width:80vw;
+    opacity:0.35; /* make sure it doesn't hide About text on smaller screens */
+  }
+
+  .about-leaves img.kc-leaf-left{
+    left: -20px;
+    bottom: -40px;
+    width:260px;
+    max-width:70vw;
+    opacity:0.22;
+    transform-origin: 30% 60%;
+  }
+}
+
+
+
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 1fr; /* Make them exactly 50/50 */
@@ -267,11 +465,11 @@ background: linear-gradient(
 }
 
 .round-image {
-  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+  box-shadow: 10px 15px 40px rgba(0, 0, 0, 0.08);
   height: auto;
-  border: 2px solid #c28c5a; /* brown outside frame */
-  padding: 8px; /* space between border and image */
-  background: transparent;
+  border: 2px solid rgba(194, 140, 90, 0.5); /* 50% opacity */
+  padding: 10px;
+  background: #ffff;
 }
 
 .round-image img {
