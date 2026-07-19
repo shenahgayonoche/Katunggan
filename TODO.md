@@ -20,7 +20,7 @@
 
 - [x] Ensure smooth scrolling works with in-page anchor links.
 
-- [x] Verify PDF path `pdf/katunggan-cafe-menu.pdf` exists; if not, adjust iframe src gracefully.
+- [x] Verify PDF path `pdf/Katunggan Cafe Menu.pdf` exists; if not, adjust iframe src gracefully.
 
 
 

@@ -1,4 +1,8 @@
-<?php $activePage = 'cafe'; ?>
+<?php
+$activePage = 'cafe';
+$menuPdfPath = 'pdf/Katunggan Cafe Menu.pdf';
+$menuPdfExists = file_exists($menuPdfPath);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,7 +44,7 @@
   </div>
 
   <div class="hero-right" aria-hidden="true">
-    <img class="hero-food" src="assets/images/hero/trial2.png" alt="" loading="eager">
+    <img class="hero-food" src="assets/images/hero/trail2.webp" alt="" loading="eager">
   </div>
 </section>
 
@@ -130,31 +134,31 @@
     <div class="signature-grid">
       <article class="signature-card">
         <div class="signature-media">
-          <img src="assets/images/gallery/image1.webp" alt="Local Seafood Creation" loading="lazy">
+          <img src="assets/images/cafe/breakfastmeals.webp" alt="Breakfast Meals" loading="lazy">
         </div>
         <div class="signature-content">
-          <h3>Local Seafood Creation</h3>
-          <p>Fresh coastal ingredients prepared with Filipino-inspired flavors.</p>
+          <h3>Breakfast Meals</h3>
+          <p>A perfect mix of savory Filipino favorites and a sweet mango-bacon crepe breakfast.</p>
         </div>
       </article>
 
       <article class="signature-card">
         <div class="signature-media">
-          <img src="assets/images/gallery/image2.webp" alt="Guimaras Mango Specialty" loading="lazy">
+          <img src="assets/images//cafe/msuhroomtrufflesoup.webp" alt="Mushroom Truffle Soup" loading="lazy">
         </div>
         <div class="signature-content">
-          <h3>Guimaras Mango Specialty</h3>
-          <p>A refreshing creation featuring the island's famous mangoes.</p>
+          <h3>Mushroom Truffle Soup</h3>
+          <p>Rich mushroom bisque of shiitake and button varieties, blended with velvet crème and aromatic truffle.</p>
         </div>
       </article>
 
       <article class="signature-card">
         <div class="signature-media">
-          <img src="assets/images/gallery/image3.webp" alt="Modern Filipino Favorite" loading="lazy">
+          <img src="assets/images/cafe/artisanalpizza.webp" alt="Artisanal Pizza" loading="lazy">
         </div>
         <div class="signature-content">
-          <h3>Modern Filipino Favorite</h3>
-          <p>A contemporary take on a classic Filipino dish.</p>
+          <h3>Artisanal Pizza</h3>
+          <p>Freshly baked, hand-tossed crusts layered with premium cheeses, gourmet meats, and vibrant, locally inspired toppings for the ultimate savory slice.</p>
         </div>
       </article>
     </div>
@@ -193,22 +197,30 @@
     </div>
 
     <div id="menu-pdf" class="pdf-wrap">
-      <a class="btn btn-lg" href="pdf/katunggan-cafe-menu.pdf" target="_blank" rel="noopener noreferrer">View Full Menu PDF</a>
-
       <div class="pdf-frame">
         <iframe
-          src="pdf/katunggan-cafe-menu.pdf"
+          src="<?php echo $menuPdfPath; ?>"
           width="100%"
           height="700px"
-          title="Katunggan Café Full Menu PDF"
+          title="Katunggan Cafe Menu"
           loading="lazy"
           referrerpolicy="no-referrer">
         </iframe>
       </div>
 
-      <p class="pdf-note">
-        If the PDF does not load yet, please ensure <span class="mono">pdf/katunggan-cafe-menu.pdf</span> exists on the server.
+      <div class="pdf-actions" style="display:flex; justify-content:center; margin-top:24px;">
+        <a class="btn btn-lg" href="<?php echo $menuPdfPath; ?>" target="_blank" rel="noopener noreferrer">View Full Menu PDF</a>
+      </div>
+
+      <?php if (! $menuPdfExists): ?>
+      <p class="pdf-note" style="text-align:center; margin-top:18px;">
+        The menu file is missing. Please upload <span class="mono"><?php echo $menuPdfPath; ?></span> to the server.
       </p>
+      <?php endif; ?>
+
+      <noscript>
+        <p class="pdf-note">PDF preview requires JavaScript. Use the “View Full Menu PDF” button instead.</p>
+      </noscript>
     </div>
   </div>
 </section>
