@@ -31,8 +31,8 @@
         Welcome to Katunggan Café, where the vibrant flavors of Guimaras come to life through a modern Filipino dining experience inspired by the island's rich land, sea, and culture.
       </span>
 
-      <div class="hero-buttons">
-        <a href="#menu-pdf" class="btn" aria-label="View Full Menu">
+      <div class="hero-buttons hero-buttons-left">
+        <a href="#menu-pdf" class="btn btn-ghost" aria-label="View Full Menu">
           View Full Menu
         </a>
       </div>
