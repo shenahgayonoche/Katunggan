@@ -1,11 +1,8 @@
-- [x] Review existing gallery carousel logic and enhancement CSS
-- [x] Implement circular smooth autoplay + one-by-one sliding
+# TODO - KatungganCove Contact Fix
 
-- [x] Apply rounded rectangle card design + subtle scale transitions
-
-- [x] Update prev/next buttons to green theme with hover/click animations
-
-- [x] Add/adjust responsive rules for desktop/tablet/mobile
-
-- [x] Verify no skipping and no reset behavior on loop
+- [ ] Fix `contact.php` to remove duplicated HTML and embedded mail-handling code.
+- [ ] Update the contact form to submit via `contact-handler.php` (AJAX + JSON expected by `assets/js/contact-form.js`).
+- [ ] Ensure correct include paths (`includes/header.php`, `includes/footer.php`) and remove the stray trailing `<li>`.
+- [ ] Include `assets/js/contact-form.js` on the contact page.
+- [ ] Quick test: open `/contact.php`, submit form, and confirm no include warnings + correct JSON response handling.
 

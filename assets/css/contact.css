@@ -62,7 +62,8 @@
 }
 
 .contact-form-card input,
-.contact-form-card textarea {
+.contact-form-card textarea,
+.contact-form-card select {
   width: 100%;
   margin-top: 8px;
   padding: 12px 14px;
@@ -70,16 +71,62 @@
   border-radius: 12px;
   font: inherit;
   background: #f9fbf8;
+  color: #3a5836;
 }
 
 .contact-form-card textarea {
   resize: vertical;
 }
 
+/* Match dropdown look with inputs */
+.contact-form-card select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image:
+    linear-gradient(45deg, transparent 50%, #3a5836 50%),
+    linear-gradient(135deg, #3a5836 50%, transparent 50%),
+    linear-gradient(to right, transparent, transparent);
+  background-position:
+    calc(100% - 18px) calc(1em + 4px),
+    calc(100% - 13px) calc(1em + 4px),
+    calc(100% - 2.5em) 0.5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.8em;
+  background-repeat: no-repeat;
+}
+
+.contact-form-card input:focus,
+.contact-form-card textarea:focus,
+.contact-form-card select:focus {
+  outline: none;
+  border-color: rgba(58, 88, 54, 0.45);
+  box-shadow: 0 0 0 4px rgba(58, 88, 54, 0.12);
+}
+
 .contact-form-card .btn {
   margin-top: 18px;
   border: none;
   cursor: pointer;
+}
+
+/* Validation errors */
+.field-error {
+  display: none;
+  margin-top: 6px;
+  font-size: 0.78rem;
+  color: #b00020;
+}
+
+.has-error {
+  border-color: rgba(176, 0, 32, 0.65) !important;
+  box-shadow: 0 0 0 4px rgba(176, 0, 32, 0.12) !important;
+}
+
+.inquiry-other-row {
+  margin-top: 12px;
 }
 
 .faq-section {
@@ -123,3 +170,4 @@
     grid-template-columns: 1fr;
   }
 }
+

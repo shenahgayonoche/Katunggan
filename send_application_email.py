@@ -9,10 +9,10 @@ def main() -> None:
     #   python send_application_email.py <recipient_email> <subject>
     # and the email body is piped via STDIN.
 
-    sender_email = "shenah.gyaonoche0403@gmail.com"  # change if needed
+    sender_email = "shenah.gayonoche0403@gmail.com"  # change if needed
 
     # TODO:
-    sender_password = "cilz bpmu ojiw tglj"  #paste your valid Gmail App Password here (App Passwords required)
+    sender_password = "oerp azlv gvcg mcur"  #paste your valid Gmail App Password here (App Passwords required)
 
 
     receiver = sys.argv[1] if len(sys.argv) > 1 else ""

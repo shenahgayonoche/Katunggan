@@ -87,3 +87,60 @@ trial09
 ---
 Sent from: 192.168.0.108
 
+2026-07-19T06:37:52+02:00
+--- PYTHON SMTP FAILED ---
+ERROR: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 98e67ed59e1d1-38e3a0d82d1sm5427325a91.10 - gsmtp')
+
+
+2026-07-19T06:37:54+02:00
+You have received a new contact form submission from katungganCoveResort website.
+
+Name: Shenah Gayonoche
+Email: shenahpetalgo@gmail.com
+Phone: 09703681356
+Inquiry Type: Restaurant Reservation
+
+Message:
+Hellooooooo
+
+---
+Sent from: 192.168.0.108
+
+2026-07-19T06:38:58+02:00
+--- PYTHON SMTP FAILED ---
+ERROR: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-84c2f1601d6sm3503292b3a.50 - gsmtp')
+
+
+2026-07-19T06:39:00+02:00
+You have received a new contact form submission from katungganCoveResort website.
+
+Name: Shenah Gayonoche
+Email: shenah.gayonoche0403@gmail.com
+Phone: dsdsd
+Inquiry Type: Booking Inquiry
+
+Message:
+hsakajkakdjkad
+
+---
+Sent from: 192.168.0.108
+
+2026-07-19T06:41:34+02:00
+--- PYTHON SMTP FAILED ---
+ERROR: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-84c2af9f00bsm3711513b3a.56 - gsmtp')
+
+
+2026-07-19T06:41:36+02:00
+You have received a new contact form submission from katungganCoveResort website.
+
+Name: Shenah Gayonoche
+Email: shenah.gayonoche0403@gmail.com
+Phone: 09090909
+Inquiry Type: Booking Inquiry
+
+Message:
+Hellloooooo
+
+---
+Sent from: 192.168.0.108
+
