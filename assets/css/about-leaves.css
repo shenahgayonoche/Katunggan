@@ -17,7 +17,6 @@
   justify-content:flex-end;
 }
 
-
 /* the about section container is .section; keep leaf behind content */
 .section[data-reveal]{
   position:relative;
@@ -31,7 +30,6 @@
   margin-right:-15px;
   transform-origin: 70% 50%;
   animation: kcLeafWind 8s ease-in-out infinite;
-
 }
 
 @keyframes kcLeafWind{
@@ -49,6 +47,35 @@
   }
 }
 
+/* Second leaf (lower-left) */
+.about-leaves img.kc-leaf-left{
+  position:absolute;
+  top:auto;
+  bottom: -40px;
+  left: -10px;
+  width:420px;
+  max-width:70vw;
+  opacity:0.45;
+  transform-origin: 30% 60%;
+  filter: saturate(1.05) contrast(1.05);
+  animation: kcLeafWindLeft 10s ease-in-out infinite;
+  margin-right:0; /* override base margin-right */
+}
+
+@keyframes kcLeafWindLeft{
+  0%{
+    transform: rotate(-6deg) translateX(0) scale(1);
+  }
+  30%{
+    transform: rotate(-8deg) translateX(10px) scale(1.01);
+  }
+  60%{
+    transform: rotate(-4deg) translateX(-8px) scale(1.01);
+  }
+  100%{
+    transform: rotate(-6deg) translateX(0) scale(1);
+  }
+}
 
 @media (max-width:900px){
   .about-leaves{
@@ -59,6 +86,14 @@
     max-width:80vw;
     opacity:0.35; /* make sure it doesn't hide About text on smaller screens */
   }
-}
 
+  .about-leaves img.kc-leaf-left{
+    left: -20px;
+    bottom: -40px;
+    width:260px;
+    max-width:70vw;
+    opacity:0.22;
+    transform-origin: 30% 60%;
+  }
+}
 
