@@ -202,7 +202,7 @@
     </div>
 
     <div class="about-image">
-      <img src="assets/images/hero/image1.webp" alt="">
+      <img src="assets/images/cafe/breakfastmeals.webp" alt="">
     </div>
 
 

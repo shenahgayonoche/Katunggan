@@ -129,29 +129,7 @@
   </div>
 </section>
 
-<section class="section faq-section">
-  <div class="container">
-    <div class="section-title">
-      <p>Frequently Asked Questions</p>
-      <h2>Answers to the usual questions.</h2>
-    </div>
-
-    <div class="faq-list">
-      <details open>
-        <summary>What are your check-in and check-out times?</summary>
-        <p>Check-in from 2:00pm and check-out by 12:00 noon. Early or late requests can be arranged based on availability.</p>
-      </details>
-      <details>
-        <summary>Do you offer airport and port transfers?</summary>
-        <p>Yes — private transfers from Iloilo Airport or Jordan Port can be arranged with advance notice.</p>
-      </details>
-      <details>
-        <summary>Can I host a wedding or private event?</summary>
-        <p>Yes. Our garden function hall accommodates up to 120 guests and can be arranged for bespoke events.</p>
-      </details>
-    </div>
-  </div>
-</section>
+<!-- FAQ section removed per request -->
 
 <?php include 'includes/footer.php'; ?>
 

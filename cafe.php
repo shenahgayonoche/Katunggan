@@ -1,7 +1,6 @@
-<?php
-$activePage = 'cafe';
-$menuPdfPath = 'pdf/katunggan-cafe-menu.pdf';
-$menuPdfExists = file_exists($menuPdfPath);
+<?php 
+$activePage = 'cafe';$menuPdfPath = 'pdf/katunggan-cafe-menu.pdf'; 
+$menuPdfExists = file_exists($menuPdfPath); 
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -55,7 +54,6 @@ $menuPdfExists = file_exists($menuPdfPath);
   <div class="container">
 
     <div class="section-title">
-      <p>What Makes Katunggan Café Special</p>
       <h2>What Makes Katunggan Café Special</h2>
     </div>
 
@@ -189,7 +187,6 @@ $menuPdfExists = file_exists($menuPdfPath);
 <section class="section cafe-menu-pdf" data-reveal>
   <div class="container">
     <div class="section-title">
-      <p>Explore Our Full Menu</p>
       <h2>Explore Our Full Menu</h2>
       <p class="section-description">
         Discover our complete selection of dishes, beverages, and island-inspired creations.
