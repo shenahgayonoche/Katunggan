@@ -1,15 +1,19 @@
+<?php $activePage = 'home'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Katunggan Cove Resort</title>
+  <title>Katunggan Cove Resort | Nature Escape in Guimaras</title>
+  <meta name="description" content="Discover your private nature escape in Guimaras. Explore mangroves, island tours, pools, and local cuisine at Katunggan Cove Resort.">
   <link rel="icon" href="assets/images/logo/logo.svg" type="image/svg+xml">
 
   <link rel="stylesheet" href="assets/css/header-footer.css">
   <link rel="stylesheet" href="assets/css/style.css">
-
   <link rel="stylesheet" href="assets/css/accommodation.css">
+
+  <?php include 'includes/fonts.php'; ?>
+</head>
 
 
 
@@ -235,7 +239,7 @@
 
     <br>
 
-    <a href="booking.php" class="btn">
+    <a href="https://www.facebook.com/p/Katunggan-Cove-Resort-61589372212595/" target="_blank" rel="noopener noreferrer" class="btn">
       Book Your Stay
     </a>
 

@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gallery | Katunggan Cove Resort</title>
+  <meta name="description" content="A visual notebook of Katunggan Cove Resort — rooms, food, sea, and serene island moments in Guimaras.">
   <link rel="icon" href="assets/images/logo/logo.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/css/header-footer.css">
   <link rel="stylesheet" href="assets/css/style.css">

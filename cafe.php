@@ -8,6 +8,7 @@ $menuPdfExists = file_exists($menuPdfPath);
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Katunggan Café | Katunggan Cove Resort</title>
+  <meta name="description" content="Explore signature Ilonggo dishes, artisanal pizza, and full cafe menus at Katunggan Cove Resort in Guimaras.">
   <link rel="icon" href="assets/images/logo/logo.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/css/header-footer.css">
   <link rel="stylesheet" href="assets/css/style.css">

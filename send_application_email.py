@@ -1,3 +1,4 @@
+import os
 import sys
 import smtplib
 from email.message import EmailMessage
@@ -9,10 +10,8 @@ def main() -> None:
     #   python send_application_email.py <recipient_email> <subject>
     # and the email body is piped via STDIN.
 
-    sender_email = "shenah.gayonoche0403@gmail.com"  # change if needed
-
-    # TODO:
-    sender_password = "oerp azlv gvcg mcur"  #paste your valid Gmail App Password here (App Passwords required)
+    sender_email = os.getenv("GMAIL_SENDER_EMAIL", "shenah.gayonoche0403@gmail.com")
+    sender_password = os.getenv("GMAIL_APP_PASSWORD", "oerp azlv gvcg mcur")
 
 
     receiver = sys.argv[1] if len(sys.argv) > 1 else ""

@@ -1,15 +1,15 @@
+<?php $activePage = 'accommodation'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Katunggan Cove Resort</title>
+  <title>Accommodations | Katunggan Cove Resort</title>
+  <meta name="description" content="Explore comfortable villas, premium queen rooms, and quad rooms at Katunggan Cove Resort in Guimaras.">
   <link rel="icon" href="assets/images/logo/logo.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/css/header-footer.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/accommodation.css">
-
-
 
   <?php include 'includes/fonts.php'; ?>
 </head>

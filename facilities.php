@@ -1,9 +1,11 @@
+<?php $activePage = 'facilities'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Facilities | Katunggan Cove Resort</title>
+  <title>Facilities &amp; Amenities | Katunggan Cove Resort</title>
+  <meta name="description" content="Discover infinity pools, function halls, mangrove gardens, and island amenities at Katunggan Cove Resort.">
   <link rel="icon" href="assets/images/logo/logo.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/css/header-footer.css">
   <link rel="stylesheet" href="assets/css/style.css">
