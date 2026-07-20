@@ -124,39 +124,55 @@ $menuPdfExists = file_exists($menuPdfPath);
 <!-- ================= SIGNATURE DISHES ================= -->
 <section class="section cafe-signatures" data-reveal>
   <div class="container">
-    <div class="section-title">
-      <p>Menu Highlights</p>
-      <h2>Signature Dishes</h2>
+    <div class="signatures-header">
+      <div class="header-left">
+        <p class="section-subtitle">Menu Highlights</p>
+        <h2>Signature Dishes</h2>
+      </div>
     </div>
 
     <div class="signature-grid">
+      <!-- Card 1: Breakfast Meals -->
       <article class="signature-card">
         <div class="signature-media">
           <img src="assets/images/cafe/breakfastmeals.webp" alt="Breakfast Meals" loading="lazy">
-        </div>
-        <div class="signature-content">
-          <h3>Breakfast Meals</h3>
-          <p>A perfect mix of savory Filipino favorites and a sweet mango-bacon crepe breakfast.</p>
+          <div class="card-overlay-content">
+            <h3>Breakfast Meals</h3>
+            <p>A perfect mix of savory Filipino favorites and a sweet mango-bacon crepe breakfast.</p>
+          </div>
         </div>
       </article>
 
+      <!-- Card 2: Mushroom Truffle Soup -->
       <article class="signature-card">
         <div class="signature-media">
-          <img src="assets/images//cafe/msuhroomtrufflesoup.webp" alt="Mushroom Truffle Soup" loading="lazy">
-        </div>
-        <div class="signature-content">
-          <h3>Mushroom Truffle Soup</h3>
-          <p>Rich mushroom bisque of shiitake and button varieties, blended with velvet crème and aromatic truffle.</p>
+          <img src="assets/images/cafe/msuhroomtrufflesoup.webp" alt="Mushroom Truffle Soup" loading="lazy">
+          <div class="card-overlay-content">
+            <h3>Mushroom Truffle Soup</h3>
+            <p>Rich mushroom bisque of shiitake and button varieties, blended with velvet crème and aromatic truffle.</p>
+          </div>
         </div>
       </article>
 
+      <!-- Card 3: Artisanal Pizza -->
       <article class="signature-card">
         <div class="signature-media">
           <img src="assets/images/cafe/artisanalpizza.webp" alt="Artisanal Pizza" loading="lazy">
+          <div class="card-overlay-content">
+            <h3>Artisanal Pizza</h3>
+            <p>Freshly baked, hand-tossed crusts layered with premium cheeses, gourmet meats, and vibrant toppings.</p>
+          </div>
         </div>
-        <div class="signature-content">
-          <h3>Artisanal Pizza</h3>
-          <p>Freshly baked, hand-tossed crusts layered with premium cheeses, gourmet meats, and vibrant, locally inspired toppings for the ultimate savory slice.</p>
+      </article>
+
+      <!-- Card 4: Kansi (Newly Added) -->
+      <article class="signature-card">
+        <div class="signature-media">
+          <img src="assets/images/cafe/kansi.webp" alt="Authentic Ilonggo Kansi" loading="lazy">
+          <div class="card-overlay-content">
+            <h3>Guimaras Kansi</h3>
+            <p>A classic Ilonggo favorite—tender beef shank cooked in a sour, savory broth flavored with local batuan fruit.</p>
+          </div>
         </div>
       </article>
     </div>
